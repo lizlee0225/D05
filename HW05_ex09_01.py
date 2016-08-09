@@ -8,10 +8,19 @@
 
 # Body
 
+def twenty_chr():
+	fin = open('words.txt')
+	for line in fin:
+		lst_words = line.split()
+		for word in lst_words:
+			if len(word) > 20:
+				print(word)
+
+
 
 ##############################################################################
 def main():
-    pass  # Call your functions here.
+    twenty_chr() # Call your functions here.
 
 if __name__ == '__main__':
     main()
